@@ -1,21 +1,30 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const contentDiv = document.getElementById('content');
+	const cache = {}; // In-memory cache object
 
   // Function to handle route changes and load external content
   async function handleRoute(route) {
-    try {
-      const response = await fetch(`${route}.html`); // Assumes files are named like the route + .html
-      if (response.ok) {
-        const content = await response.text();
-        contentDiv.innerHTML = content;
-      } else {
-        contentDiv.innerHTML = '<h1>Seite nicht gefunden</h1><p>Seite nicht gefunden.</p>';
-      }
-    } catch (error) {
-      console.error('Error during content loading:', error);
-      contentDiv.innerHTML = '<h1>Error</h1><p>Ein Fehler ist beim Laden des Inhaltes aufgetreten.</p>';
+		if (cache[route]) {
+      // If content is in cache, use it
+			console.info ('Content taken from cache');
+      contentDiv.innerHTML = cache[route];
     }
+		else {
+	    try {
+	      const response = await fetch(`${route}.html`); // Assumes files are named like the route + .html
+	      if (response.ok) {
+	        const content = await response.text();
+					cache[route] = content; // Store content in cache
+	        contentDiv.innerHTML = content;
+	      } else {
+	        contentDiv.innerHTML = '<h1>Seite nicht gefunden</h1><p>Seite nicht gefunden.</p>';
+	      }
+	    } catch (error) {
+	      console.error('Error during content loading:', error);
+	      contentDiv.innerHTML = '<h1>Error</h1><p>Ein Fehler ist beim Laden des Inhaltes aufgetreten.</p>';
+	    }
+		}
   }
 
   // Add event listeners to navigation links
