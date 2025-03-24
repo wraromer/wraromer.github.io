@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 	<title>Wolfgangs Support</title>
 </head>
 
@@ -13,26 +13,25 @@
 	<div id="app">
 		<header>
 			<h1>
-				Wolfgangs Support
+				Wolfgangs Support - Ihr IT-Experte und Digital Trainer
 			</h1>
 		</header>
 		<nav>
 			<ul>
 				<li>
-					<a href="#" onclick=
-					"changeContent('home')">
-						Home
+					<a href="#" onclick="changeContent('home')">
+						Start
 					</a>
 				</li>
+				<li id="spacer">
+				</li>
 				<li>
-					<a href="#" onclick=
-					"changeContent('about')">
+					<a href="#" onclick="changeContent('about')">
 						Über mich
 					</a>
 				</li>
 				<li>
-					<a href="#" onclick=
-					"changeContent('contact')">
+					<a href="#" onclick="changeContent('contact')">
 						Kontakt
 					</a>
 				</li>
@@ -40,13 +39,18 @@
 		</nav>
 		<main>
 			<div id="content">
-				<h2>Technik-Support und Schulungen</h2>
-				<p>
-          Wolfgangs Support hilft bei IT-Problemen aller Art: Notebook, Handy, Hardware und Software.
-				</p>
+				// script.js onload will produce the initial content as well
 			</div>
 		</main>
+		<footer>
+			<div id="copyright">
+				<p>
+					&copy; 2025 Wolfgang Römer
+				</p>	
+			</div>
+		</footer>
 	</div>
+	
 	<script src="script.js"></script>
 </body>
 
