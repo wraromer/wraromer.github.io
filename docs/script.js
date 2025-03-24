@@ -4,7 +4,6 @@ function changeContent(page) {
 	switch (page) {
 		case 'home':
 			contentDiv.innerHTML = `
-				<img src= "./me-14-bw.jpg" width="512">
 				<h2>Technik-Support und Schulungen</h2>
 				<p>
           Wolfgangs Support hilft bei IT-Problemen aller Art: Notebook, Handy, Hardware und Software.
@@ -14,6 +13,7 @@ function changeContent(page) {
 		case 'about':
 			contentDiv.innerHTML = `
 				<h2>Über mich</h2>
+				<img src= "./me-14-bw.jpg" width="512">
 				<p>
         Mein Name ist Wolfgang Römer und bereits mit 13 Jahren begann ich Heimcomputer zu programmieren. Später lernte ich PCs und Großrechner kennen und studierte schließlich Physik mit der Spezialisierung auf Elektronik.
         </p>
@@ -28,6 +28,7 @@ Meine sehr schnelle Auffassungsgabe und mein Kommunikationstalent führten dazu,
 		case 'contact':
 			contentDiv.innerHTML = 
 				`<h2>Kontakt</h2> 
+				<img src= "./me-14-bw.jpg" width="512">
 				<p>
           Wolfgang Römer<br>
           wraromer@duck.com<br>
