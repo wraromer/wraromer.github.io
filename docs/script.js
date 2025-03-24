@@ -42,7 +42,7 @@ function changeContent(page) {
 						69126 Heidelberg
 					</p>
 					<p>
-						Sie erreichen mich per E-Mail unter: <a href="mailto:wraromer@duck.com">wraromer@duck.com</a>
+						Sie erreichen mich per E-Mail unter: <a href="mailto:info@wolfgangs.support">info@wolfgangs.support</a>
 					</p>
 				</div>
 				`;
