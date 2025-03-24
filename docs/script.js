@@ -13,7 +13,7 @@ function changeContent(page) {
 		case 'about':
 			contentDiv.innerHTML = `
 				<h2>Über mich</h2>
-				<img src= "./me-14-bw.jpg" width="512">
+				<img src= "./me-14-bw.jpg">
 				<p>
         Mein Name ist Wolfgang Römer und bereits mit 13 Jahren begann ich Heimcomputer zu programmieren. Später lernte ich PCs und Großrechner kennen und studierte schließlich Physik mit der Spezialisierung auf Elektronik.
         </p>
@@ -28,7 +28,7 @@ Meine sehr schnelle Auffassungsgabe und mein Kommunikationstalent führten dazu,
 		case 'contact':
 			contentDiv.innerHTML = 
 				`<h2>Kontakt</h2> 
-				<img src= "./me-14-bw.jpg" width="512">
+				<img src= "./me-14-bw.jpg">
 				<p>
           Wolfgang Römer<br>
           wraromer@duck.com<br>
