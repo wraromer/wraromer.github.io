@@ -4,8 +4,7 @@ function changeContent(page) {
 	switch (page) {
 		case 'home':
 			contentDiv.innerHTML = `
-				<img src=
-"https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-12.png">
+				<img src= "https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-12.png">
 				<h2>
 					Welcome to the Home Page!
 				</h2>
