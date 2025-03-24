@@ -4,38 +4,35 @@ function changeContent(page) {
 	switch (page) {
 		case 'home':
 			contentDiv.innerHTML = `
-				<img src= "https://media.geeksforgeeks.org/wp-content/uploads/geeksforgeeks-12.png">
-				<h2>
-					Welcome to the Home Page!
-				</h2>
+				<img src= "https://substack.com/@wraromer" width="512">
+				<h2>Technik-Support und Schulungen</h2>
 				<p>
-					This is the main page of our SPA.
-				</p>
-				<p>
-					Explore the different sections using
-					the navigation menu.
+          Wolfgangs Support hilft bei IT-Problemen aller Art: Notebook, Handy, Hardware und Software.
 				</p>
 			`;
 			break;
 		case 'about':
 			contentDiv.innerHTML = `
-				<h2>About Us</h2>
+				<h2>Über mich</h2>
 				<p>
-					This is the about page content. Learn more 
-					about our purpose and team.
-				</p>
-				<p>
-					We're passionate about creating engaging and
-					informative SPAs.
+        Mein Name ist Wolfgang Römer und bereits mit 13 Jahren begann ich Heimcomputer zu programmieren. Später lernte ich PCs und Großrechner kennen und studierte schließlich Physik mit der Spezialisierung auf Elektronik.
+
+Seit nunmehr 25 Jahren arbeite ich in der Software-Branche und habe dabei in verschiedenen Rollen und in verschiedenen Unternehmen erfolgreich neue Produkte an den Markt gebracht. Dabei war ich zunächst als Software Developer und Teamleiter aktiv, um dann auch Coaching Aufgaben wie Scrum Master und Agile Coach erfolgreich zu übernehmen.
+
+Meine sehr schnelle Auffassungsgabe und mein Kommunikationstalent führten dazu, dass ich sowohl als Product Owner als auch Produktmanager tätig wurde. Diese Rollen sind meine Steckenpferde und ich konzentriere mich mehr und mehr ausschließlich auf sie.
 				</p>
 			`;
 			break;
 		case 'contact':
 			contentDiv.innerHTML = 
-				`<h2>Contact Us</h2> 
+				`<h2>Kontakt</h2> 
 				<p>
-					Feel free to reach out to us!
-				</p> 
+          Wolfgang Römer
+          wraromer@duck.com
+
+          Heidelberg
+				</p>
+        <!--
 				<form> 
 				<label for="name">Name:</label> 
 				<input type="text" id="name" name="name" 
@@ -49,7 +46,8 @@ function changeContent(page) {
 							rows="4" required>
 					</textarea>
 				<button type="submit">Send Message</button> 
-				</form>`;
+				</form>
+        -->`;
 			break;
 
 		default:
