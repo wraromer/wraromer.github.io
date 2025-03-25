@@ -23,7 +23,6 @@ header {
 
 nav {
 	background-color: #009fe3;
-	position: sticky;
 	top: 0;
 }
 
@@ -56,26 +55,16 @@ nav a:hover {
 }
 
 main {
-	margin: 0 0;
-	display: flex;
-  flex-direction: row;
-  flex: 1;
-}
-
-#content {
-	width: 100%;
-	display: flex;
-	align-items: flex-start;
-	flex-direction: row;
-  justify-content: left;
-
 	background-color: #fff;
 }
 
 #content img {
 	max-width: 300px;
 	max-height: auto;
+
 	margin: 40px 40px 40px 40px;
+
+	float: left;
 
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -91,17 +80,43 @@ main {
 }
 
 #page {
-	padding: 1em;
-	margin: 1em 1em;
+	margin: 20px;
 	max-width: 1280px;
 
-	background-color: #fff;
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 10px;
+}
+
+/* Media query for tablets and smaller screens */
+@media (max-width: 768px) {
+  #page {
+		grid-template-columns: 1fr 2fr;
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  #page {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Media query for orientation changes */
+@media (orientation: portrait) {
+  #page {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (orientation: landscape) {
+  #page{
+		grid-template-columns: 1fr 2fr;
+  }
 }
 
 #text {
-	margin-left: 40px;
-	margin-right: 40px;
-	flex: 1;
+	padding: 10px 0px 10px 0px;
 }
 
 footer {
