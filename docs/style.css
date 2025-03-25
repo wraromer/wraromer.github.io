@@ -56,20 +56,19 @@ nav a:hover {
 }
 
 main {
-	max-width: 1280px;
-	margin: 0 auto;
-	padding: 1em;
+	margin: 0 0;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
 }
 
 #content {
-	padding: 1em;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: left;
 
 	background-color: #fff;
-	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #content h2 {
@@ -80,7 +79,17 @@ main {
 	text-decoration: none;
 }
 
-#content img {
+#page {
+	padding: 1em;
+	margin: 1em auto;
+	max-width: 1280px;
+
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#page img {
 	width: 300px;
 	height: auto;
 
@@ -100,9 +109,9 @@ main {
 
 footer {
 	clear: both;
+	
 	color: #fff;
 	background-color: #009fe3;
-	bottom: 0;
 }
 
 #copyright {
