@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', () => {
 					cache[route] = content; // Store content in cache
 	        contentDiv.innerHTML = content;
 	      } else {
-	        contentDiv.innerHTML = '<h1>Seite nicht gefunden</h1><p>Seite nicht gefunden.</p>';
+	        contentDiv.innerHTML = '<h1>Ein Fehler ist aufgetreten</h1><p>Seite nicht gefunden.</p>';
 	      }
 	    } catch (error) {
 	      console.error('Error during content loading:', error);
-	      contentDiv.innerHTML = '<h1>Error</h1><p>Ein Fehler ist beim Laden des Inhaltes aufgetreten.</p>';
+	      contentDiv.innerHTML = '<h1>Ein Fehler ist aufgetreten</h1><p>Ein Fehler ist beim Laden des Inhaltes aufgetreten.</p>';
 	    }
 		}
   }

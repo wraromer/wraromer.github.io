@@ -57,6 +57,9 @@ nav a:hover {
 
 main {
 	margin: 0 0;
+	display: flex;
+	flex-direction: row;
+	flex: 1;
 }
 
 #content {
@@ -98,35 +101,6 @@ main {
 	border: 3px solid #009fe3;
 }
 
-#blog {
-	padding: 1em;
-	margin: 1em auto;
-	max-width: 1280px;
-
-
-	display: flex;
-	flex-direction: column;
-}
-
-#blog img {
-	width: 600px;
-	height: auto;
-}
-
-#blog_post {
-	max-width: 800px;
-	font-size: larger;
-	padding: 1em;
-	margin: 1em auto;
-
-	display: flex;
-	flex-direction: column;
-
-	background-color: #fff;
-	border-radius: 8px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 #text {
 	margin-left: 40px;
 	margin-right: 40px;
@@ -135,9 +109,9 @@ main {
 
 footer {
 	clear: both;
+	
 	color: #fff;
 	background-color: #009fe3;
-	bottom: 0;
 }
 
 #copyright {
