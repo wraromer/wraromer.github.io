@@ -11,7 +11,7 @@ body {
 #app {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 100%;
 }
 
 header {
@@ -56,6 +56,13 @@ nav a:hover {
 
 main {
 	background-color: #fff;
+
+	display: grid;
+  height: 100%; /* or any specific height */
+}
+
+#content {
+	height: 100%; /* or any specific height */
 }
 
 #content img {
@@ -90,6 +97,9 @@ main {
 
 /* Media query for tablets and smaller screens */
 @media (max-width: 768px) {
+	#content {
+		height: 100%; /* or any specific height */
+	}	
   #page {
 		grid-template-columns: 1fr 2fr;
   }
@@ -97,6 +107,9 @@ main {
 
 /* Media query for mobile devices */
 @media (max-width: 480px) {
+	#content {
+		height: 100%; /* or any specific height */
+	}	
   #page {
     grid-template-columns: 1fr;
   }
@@ -104,12 +117,18 @@ main {
 
 /* Media query for orientation changes */
 @media (orientation: portrait) {
+	#content {
+		height: 100%; /* or any specific height */
+	}	
   #page {
     grid-template-columns: 1fr;
   }
 }
 
 @media (orientation: landscape) {
+	#content {
+		height: 100%; /* or any specific height */
+	}	
   #page{
 		grid-template-columns: 1fr 2fr;
   }
