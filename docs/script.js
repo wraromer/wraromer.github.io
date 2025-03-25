@@ -1,6 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   const contentDiv = document.getElementById('content');
+  const blogContentDiv = document.getElementById('blog_content');
 	const cache = {}; // In-memory cache object
 
   // Function to handle route changes and load external content
@@ -34,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const route = event.target.getAttribute('data-route');
 			if (route === null)
 			{
-
+				console.warn ('No data-route attribute set');
 			}
 			else
 			{
@@ -54,4 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initial route handling
   const initialRoute = window.location.hash.substring(1) || 'home';
   handleRoute(initialRoute);
-});
+}
+);
