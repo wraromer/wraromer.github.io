@@ -65,17 +65,25 @@ main {
 	height: 100%; /* or any specific height */
 }
 
-#content img {
-	max-width: 300px;
+
+img {
+	max-width: 250px;
 	max-height: auto;
 
-	margin: 40px 40px 40px 40px;
-
+	margin: 40px 40px 5px 40px;
 	float: left;
-
 	border-radius: 10px;
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 	border: 3px solid #009fe3;
+}
+
+
+figure {
+  float: left;
+
+  text-align: center;
+  font-size: smaller;
+  text-indent: 0;
 }
 
 #content h2 {
