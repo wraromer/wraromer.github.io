@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wolfgangs.support/sitemap.xml
+
