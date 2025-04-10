@@ -65,51 +65,78 @@ main {
 	height: 100%; /* or any specific height */
 }
 
-
-img {
-	max-width: 250px;
-	max-height: auto;
-
-	margin: 40px 40px 5px 40px;
-	float: left;
-	border-radius: 10px;
-	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-	border: 3px solid #009fe3;
-}
-
-
-figure {
-  float: left;
-
-  text-align: center;
-  font-size: smaller;
-  text-indent: 0;
-}
-
 #content h2 {
 	color: #009fe3;
 }
 
 #content a {
 	text-decoration: none;
+	width: 100%
+}
+
+#content img {
+	max-width: 250px;
+	max-height: auto;
+
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	border: 3px solid #009fe3;
 }
 
 #page {
 	margin: 20px;
-	max-width: 1280px;
 
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 1fr 2fr 1fr;
 	gap: 10px;
 }
 
+.left {
+  text-align: center;
+  font-size: smaller;
+  text-indent: 0;
+
+	margin-right: 10px;
+	margin-top: 150px;
+}
+
+.right {
+  text-align: center;
+  font-size: smaller;
+  text-indent: 0;
+
+	margin-left: 10px;
+	margin-top: 150px;
+}
+
+#text {
+	padding: 10px 10px 10px 10px;
+}
+
+figure {
+  text-align: center;
+  font-size: smaller;
+  text-indent: 0;
+
+	margin-right: 10px;
+	margin-top: 50px;
+}
+
 /* Media query for tablets and smaller screens */
+@media (orientation: landscape) {
+	#content {
+		height: 100%; /* or any specific height */
+	}	
+  #page{
+		grid-template-columns: 1fr 2fr 1fr;
+  }
+}
 @media (max-width: 768px) {
 	#content {
 		height: 100%; /* or any specific height */
 	}	
   #page {
-		grid-template-columns: 1fr 2fr;
+		grid-template-columns: 1fr 2fr 1fr;
   }
 }
 
@@ -133,18 +160,6 @@ figure {
   }
 }
 
-@media (orientation: landscape) {
-	#content {
-		height: 100%; /* or any specific height */
-	}	
-  #page{
-		grid-template-columns: 1fr 2fr;
-  }
-}
-
-#text {
-	padding: 10px 0px 10px 0px;
-}
 
 footer {
 	clear: both;
