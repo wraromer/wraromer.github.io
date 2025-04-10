@@ -18,7 +18,7 @@ header {
 	background-color: #ffffff;
 	color: #a0a0a0;
 	text-align: left;
-	padding: 1em;
+	padding: 10px 10px 10px 200px
 }
 
 nav {
@@ -140,6 +140,10 @@ main {
     grid-template-columns: 1fr;
   }
 
+	header {
+		padding: 5%;
+	}
+
 	.left {
 		margin: 0px;
 		margin: 0px;
@@ -158,10 +162,14 @@ main {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   #page {
 		grid-template-columns: 1fr;
   }
+
+	header {
+		padding: 5%;
+	}
 
 	.left {
 		margin-top: 0px;
