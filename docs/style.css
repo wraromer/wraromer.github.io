@@ -70,7 +70,8 @@ main {
 }
 
 #content a {
-	text-decoration: none;
+	text-decoration-line: underline;
+  text-decoration-style: dotted;
 	width: 100%
 }
 
@@ -111,6 +112,7 @@ main {
 
 #text {
 	padding: 10px 10px 10px 10px;
+  line-height: 1.5em;
 }
 
 figure {
