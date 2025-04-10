@@ -57,7 +57,7 @@ nav a:hover {
 main {
 	background-color: #fff;
 
-	display: grid;
+
   height: 100%; /* or any specific height */
 }
 
@@ -85,6 +85,12 @@ main {
 	border: 3px solid #009fe3;
 }
 
+#content figure {
+  text-align: center;
+  font-size: smaller;
+  text-indent: 0;
+}
+
 #page {
 	margin: 20px;
 
@@ -94,19 +100,11 @@ main {
 }
 
 .left {
-  text-align: center;
-  font-size: smaller;
-  text-indent: 0;
-
 	margin-right: 10px;
 	margin-top:   5px;
 }
 
 .right {
-  text-align: center;
-  font-size: smaller;
-  text-indent: 0;
-
 	margin-left: 10px;
 	margin-top:  5px;
 }
@@ -116,76 +114,95 @@ main {
   line-height: 1.5em;
 }
 
-#bottom-text {
+#bottom-center
+{
+	/* horizontal centering for whole bottom container */
 	display: grid;
-  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+	justify-content: center;	
+}
 
-	padding: 5px 10px 10px 10px;
-  margin:  5px 10px 10px 100px;
+#bottom-page {
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+	column-gap: 30px;
+
+	width: 75%;
+  margin: 10px 10px 10px 150px;
+
   line-height: 1.5em;
-
   text-align: left;
 }
 
-figure {
-  text-align: center;
-  font-size: smaller;
-  text-indent: 0;
-
-	margin-right: 10px;
-	margin-top: 50px;
-}
-
 /* Media query for tablets and smaller screens */
-@media (orientation: landscape) {
-	#content {
-		height: 100%; /* or any specific height */
-	}	
-  #page{
-		grid-template-columns: 1fr 2fr 1fr;
+@media (orientation: portrait) {
+  #page {
+    grid-template-columns: 1fr;
   }
-  #bottom-text{
+
+	.left {
+		margin: 0px;
+		margin: 0px;
+	}
+	
+	.right {
+		margin: 0px;
+		margin: 0px;
+	}
+	
+  #bottom-page{
+    grid-template-columns: 1fr;
+		width: 90%;
+		margin: 10px 10px 10px 10px;
   }
 }
+
 
 @media (max-width: 768px) {
-	#content {
-		height: 100%; /* or any specific height */
-	}	
   #page {
-		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-columns: 1fr;
   }
-  #bottom-text{
-    padding: 0;
-    margin: 0 0 0 50px;
-  }
+
+	.left {
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+	
+	.right {
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#bottom-page{
+    grid-template-columns: 1fr;
+		width: 90%;
+		margin: 10px 10px 10px 10px;
+		}
 }
 
+/*
 @media (max-width: 480px) {
-	#content {
-		height: 100%; /* or any specific height */
-	}	
   #page {
     grid-template-columns: 1fr;
   }
-  #bottom-text{
-   padding: 0;
-   margin: 0 0 0 50px;
-  }
-}
 
-@media (orientation: portrait) {
-	#content {
-		height: 100%; /* or any specific height */
-	}	
-  #page {
-    grid-template-columns: 1fr;
-  }
-  #bottom-text{
-    padding: 0;
-    margin: 0 0 0 50px;
-  }
+	.left {
+		margin-top: 0px;
+		margin-right: 0px;
+	}
+	
+	.right {
+		margin-top: 0px;
+		margin-left: 0px;
+	}
+
+	#bottom-page{
+   grid-template-columns: 1fr;
+	 width: 90%;
+	 margin: 10px 10px 10px 10px;
+	}
 }
+*/
 
 footer {
 	clear: both;
