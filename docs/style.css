@@ -67,6 +67,7 @@ main {
 
 #content h2 {
 	color: #009fe3;
+  margin: 0;
 }
 
 #content a {
@@ -98,7 +99,7 @@ main {
   text-indent: 0;
 
 	margin-right: 10px;
-	margin-top: 150px;
+	margin-top:   5px;
 }
 
 .right {
@@ -107,12 +108,23 @@ main {
   text-indent: 0;
 
 	margin-left: 10px;
-	margin-top: 150px;
+	margin-top:  5px;
 }
 
 #text {
 	padding: 10px 10px 10px 10px;
   line-height: 1.5em;
+}
+
+#bottom-text {
+	display: grid;
+  grid-template-columns: 1fr;
+
+	padding: 5px 10px 10px 10px;
+  margin:  5px 10px 10px 100px;
+  line-height: 1.5em;
+
+  text-align: left;
 }
 
 figure {
@@ -132,7 +144,10 @@ figure {
   #page{
 		grid-template-columns: 1fr 2fr 1fr;
   }
+  #bottom-text{
+  }
 }
+
 @media (max-width: 768px) {
 	#content {
 		height: 100%; /* or any specific height */
@@ -140,9 +155,12 @@ figure {
   #page {
 		grid-template-columns: 1fr 2fr 1fr;
   }
+  #bottom-text{
+    padding: 0;
+    margin: 0 0 0 50px;
+  }
 }
 
-/* Media query for mobile devices */
 @media (max-width: 480px) {
 	#content {
 		height: 100%; /* or any specific height */
@@ -150,9 +168,12 @@ figure {
   #page {
     grid-template-columns: 1fr;
   }
+  #bottom-text{
+   padding: 0;
+   margin: 0 0 0 50px;
+  }
 }
 
-/* Media query for orientation changes */
 @media (orientation: portrait) {
 	#content {
 		height: 100%; /* or any specific height */
@@ -160,8 +181,11 @@ figure {
   #page {
     grid-template-columns: 1fr;
   }
+  #bottom-text{
+    padding: 0;
+    margin: 0 0 0 50px;
+  }
 }
-
 
 footer {
 	clear: both;
