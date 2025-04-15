@@ -57,7 +57,6 @@ nav a:hover {
 main {
 	background-color: #fff;
 
-
   height: 100%; /* or any specific height */
 }
 
@@ -99,12 +98,12 @@ main {
 }
 
 #top-page {
-	margin: 20px auto 20px auto;
-	width: 90%;
-
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
 	gap: 10px;
+
+	margin: 20px auto 20px auto;
+	width: 90%;
 }
 
 .left {
@@ -122,6 +121,13 @@ main {
   line-height: 1.5em;
 }
 
+#middle
+{
+	background-color: #009fe3;
+  width: 100%;
+  padding: 1.5em 0 0 0;
+}
+
 #bottom-center
 {
 	/* horizontal centering for whole bottom container */
@@ -136,7 +142,7 @@ main {
 	column-gap: 30px;
 
 	width: 75%;
-  margin: 10px 10px 10px 150px;
+  margin: 10px auto 10px auto;
 
   line-height: 1.5em;
   text-align: left;
