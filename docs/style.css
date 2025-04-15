@@ -22,8 +22,8 @@ header {
 }
 
 nav {
-	background-color: #009fe3;
 	top: 0;
+  background-image: linear-gradient(30deg,#009fe3,#005e62);
 }
 
 nav ul {
@@ -75,7 +75,7 @@ main {
 	width: 100%
 }
 
-#content img {
+.left img {
 	max-width: 250px;
 
 	border-radius: 10px;
@@ -83,11 +83,27 @@ main {
 	border: 3px solid #009fe3;
 }
 
+.right img {
+	max-width: 250px;
+
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	border: 3px solid #005e62;
+}
+
 #content figure {
   text-align: center;
   font-size: smaller;
   text-indent: 0;
 	margin: 0px;
+}
+
+img {
+	max-width: 250px;
+
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+	border: 3px solid #009fe3;
 }
 
 #top-center {
@@ -123,9 +139,9 @@ main {
 
 #middle
 {
-	background-color: #009fe3;
   width: 100%;
   padding: 1.5em 0 0 0;
+  background-image: linear-gradient(30deg,#009fe3,#005e62);
 }
 
 #bottom-center
@@ -176,7 +192,6 @@ main {
 }
 
 
-
 @media (max-width: 1000px) {
 	header {
 		padding: 5%;
@@ -185,10 +200,6 @@ main {
 	#content img {
 		width: 150px;
 		max-width: 150px;
-	
-		border-radius: 10px;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-		border: 3px solid #009fe3;
 	}
 
 	.left {
@@ -221,10 +232,6 @@ main {
 	#content img {
 		width: 150px;
 		max-width: 150px;
-	
-		border-radius: 10px;
-		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-		border: 3px solid #009fe3;
 	}
 
 	.left {
@@ -247,7 +254,12 @@ main {
 footer {
 	clear: both;
 	color: #fff;
+/*
 	background-color: #009fe3;
+  background-image: linear-gradient(135deg,rgba(0,0,0,.5),rgba(255,255,255,0)),linear-gradient(48deg,#005e62,#369057);
+  background-image: linear-gradient(135deg,rgba(0,0,0,.5),rgba(255,255,255,0)),linear-gradient(48deg,#005e62,#009fe3);
+  */
+  background-image: linear-gradient(30deg,#009fe3,#005e62);
 }
 
 #copyright {
