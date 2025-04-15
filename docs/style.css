@@ -91,8 +91,16 @@ main {
 	margin: 0px;
 }
 
-#page {
-	margin: 20px;
+#top-center {
+	/* horizontal centering for whole top container */
+	display: grid;
+	grid-template-rows: 1fr;
+	justify-content: center;	
+}
+
+#top-page {
+	margin: 20px auto 20px auto;
+	width: 90%;
 
 	display: grid;
 	grid-template-columns: 1fr 2fr 1fr;
@@ -136,7 +144,7 @@ main {
 
 /* Media query for tablets and smaller screens */
 @media (orientation: portrait) {
-  #page {
+  #top-page {
     grid-template-columns: 1fr;
   }
 
@@ -194,8 +202,9 @@ main {
 		}
 }
 
+
 @media (max-width: 800px) {
-  #page {
+  #top-page {
 		grid-template-columns: 1fr;
   }
 
@@ -204,8 +213,8 @@ main {
 	}
 
 	#content img {
-		width: 250px;
-		max-width: 250px;
+		width: 150px;
+		max-width: 150px;
 	
 		border-radius: 10px;
 		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
