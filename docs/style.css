@@ -4,9 +4,6 @@ body {
 	background-color: #fFfFfF;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
-	display: flex;
-	flex-direction: column;
-
   margin: 0;
   padding: 0;
 }
@@ -15,6 +12,9 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
+
+	display: flex;
+	flex-direction: column;
 }
 
 header {
@@ -63,6 +63,7 @@ nav a:hover {
 
 main {
 	background-color: #fff;
+  flex: 1 0 auto; /* Allows the content area to grow and shrink */
 }
 
 #content h2 {
@@ -154,8 +155,8 @@ footer {
 	color: #fff;
 	background-color: #009fe3;
 
+  flex-shrink: 0;
   width: 100%;
-  margin-top: auto;
 }
 
 #copyright {
