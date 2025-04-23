@@ -1,46 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="de">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" type="image/x-icon" href="./favicon.ico">
-	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Sie fühlen sich abgehängt bei digitalen Themen? Ich biete individuelle Schulungen für Ihre digitale Souveränität.">
-  <link rel="canonical" href="https://wolfgangs.support/">
-	<title>Ihr digital Fachmann vor Ort</title>
+	<link rel="canonical" href="https://wolfgangs.support/">
+  <link rel="icon" href="https://wolfgangs.support/favicon.ico" type="image/x-icon">
+	<title>Wolfgangs Support</title>
+
+<style>
+    :root {
+      --primary: #005385;
+      --secondary: #f5f5f5;
+      --text: #333;
+      --accent: #0096d6;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--text);
+      background-color: white;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #85377E, #EA5A28);
+      color: white;
+      padding: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .header-text {
+      max-width: 70%;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    .logo {
+      max-width: 64px;
+      height: auto;
+      border-radius: 8px;
+    }
+		.intro {
+			padding: 3rem 2rem 0 2rem;
+			max-width: 1000px;
+			margin: auto;
+		}
+    .section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: var(--secondary);
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .testimonial {
+      font-style: italic;
+    }
+    footer {
+      background: linear-gradient(135deg, #85377E, #EA5A28);
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s ease, text-decoration 0.3s ease;
+    }
+    a.button:hover {
+      background: #007bb8;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-text {
+        max-width: 100%;
+        margin-bottom: 1rem;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .section {
+        padding: 2rem 1rem;
+      }
+      .card {
+        padding: 1rem;
+      }
+      a.button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
-
 <body>
-	<div id="app">
-		<header>
-			<h1>
-				Wolfgangs Support - Ihr digital Fachmann und Trainer vor Ort
-			</h1>
-		</header>
-		<nav>
-			<ul>
-				<li><a href="#" data-route="home">Start</a></li>
-				<li id="spacer"></li>
-				<li><a href="#" data-route="about">Über mich</a></li>
-				<li><a href="#" data-route="contact">Kontakt</a></li>
-			</ul>
-		</nav>
-		<main>
- 			<div id="content">
-      </div>
-		</main>
-		<footer>
-			<div id="copyright">
-				<p>
-					&copy; 2025 Wolfgang Römer
-				</p>
+  <header>
+    <div class="header-text">
+      <h1>Wolfgangs Support</h1>
+      <p>Ihr digitaler Fachmann und Trainer vor Ort</p>
+    </div>
+    <img src="https://wolfgangs.support/favicon.ico" alt="Logo" class="logo">
+  </header>
+
+	<section class="intro">
+		<h2>Willkommen bei Wolfgangs Support</h2>
+		<p>
+				Sie möchten sich besser auskennen und sich mehr Selbständigkeit und Kompetenz rund um digitale Themen aneignen? Sie fühlen sich "abgehängt" und möchten bei Themen wie
+				Verschlüsselung, Kryptowährungen und Cloud besser mitreden können?
+		</p>
+		<br>
+		<p>
+			Hier bekommen Sie Hilfe für alles rund um IT und Ihrem digitalen Alltagsleben: Sie lernen, sich bei Problemen mit Ihrem Notebook oder Ihrem Handy auch alleine zu helfen.
+			Ihren Internetzugang zu Hause können Sie künftig selbst einrichten und administrieren. Bei Problemen mit dem heimischen WLAN wissen Sie in Zukunft, an welchen Stellschrauben
+			Sie drehen müssen, um es wieder zum Laufen zu bringen. </p>
+		</p>
+		</div>
+	</section>
+ 
+
+  <section class="section">
+    <h2>Digitale Kompetenz in Beruf und Alltag</h2>
+    <div class="grid">
+      <div class="card"><strong>Individuelle Schulungen</strong><br />Maßgeschneiderte Trainings für Ihre Bedürfnisse.</div>
+      <div class="card"><strong>Technischer Support</strong><br />Schnelle Hilfe bei technischen Herausforderungen.</div>
+      <div class="card"><strong>Digitale Beratung</strong><br />Beratung für Ihren digitalen Alltag.</div>
+      <div class="card"><strong>Geräteoptimierung</strong><br />Effiziente Einrichtung Ihrer Geräte.</div>
+      <div class="card"><strong>Softwarelösungen</strong><br />Unterstützung bei Installation & Auswahl.</div>
+    </div>
+  </section>
+
+	<section id="testimonials" style="padding: 3rem 1rem; background-color: #f9f9f9;">
+		<h2 style="text-align: center; margin-bottom: 2rem;">Was meine Kunden sagen</h2>
+		<div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+			
+			<div style="max-width: 250px; text-align: center;">
+				<img src="https://wolfgangs.support/images/wolfgangs.support-1.jpg" alt="Kundin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
+				<p style="font-style: italic;">„Sehr kompetent, geduldig und freundlich. Ich habe endlich Klarheit in meinen digitalen Alltag gebracht.“</p>
+				<strong>– Martina G., Freiberuflerin</strong>
 			</div>
-		</footer>
-	</div>
 	
-	<script src="script.js"></script>
+			<div style="max-width: 250px; text-align: center;">
+				<img src="https://wolfgangs.support/images/sir-1.jpg" alt="Kunde" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
+				<p style="font-style: italic;">„Wolfgang hat unsere Firma beim Umstieg auf moderne Tools perfekt begleitet – absolut empfehlenswert!“</p>
+				<strong>– Bernd R., Unternehmer</strong>
+			</div>
+	
+			<div style="max-width: 250px; text-align: center;">
+				<img src="https://wolfgangs.support/images/lady-4.jpg" alt="Kundin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
+				<p style="font-style: italic;">„Sympathisch, effizient und erklärt alles so, dass man es wirklich versteht.“</p>
+				<strong>– Sabine T., Selbstständig</strong>
+			</div>
+	
+		</div>
+	</section>
+	
+  <section class="section">
+    <h2>Häufige Fragen</h2>
+    <div class="grid">
+      <div class="card"><strong>Wie nutze ich mein Notebook optimal?</strong><br />Mit Schritt-für-Schritt-Anleitungen ganz einfach.</div>
+      <div class="card"><strong>Welche Software ist sinnvoll?</strong><br />Wir helfen bei der Auswahl passender Programme.</div>
+      <div class="card"><strong>Smartphone sicher einrichten?</strong><br />Unsere Tipps für Sicherheit und Datenschutz.</div>
+      <div class="card"><strong>Kann ich meinen PC selbst warten?</strong><br />Ja! Wir zeigen einfache Schritte zur Wartung.</div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Jetzt starten</h2>
+    <p>Erweitern Sie Ihre digitale Kompetenz mit maßgeschneiderten Schulungen und individueller Unterstützung.</p>
+    <a class="button" onclick="window.location.href='mailto:info@wolfgangs.support?subject=Anfrage%20%C3%BCber%20Homepage&body=Hallo%20Wolfgang%2C%0D%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihr%20Angebot.%20Bitte%20kontaktieren%20Sie%20mich.'">Kontakt aufnehmen</a>
+  </section>
+
+	<footer>
+    <p>&copy; 2025 Wolfgangs Support - <a href="impressum.html" style="color: white; text-decoration: underline;">Impressum</a></p>
+	</footer>
 </body>
-
 </html>
-
