@@ -66,7 +66,6 @@ main {
   flex: 1 0 auto; /* Allows the content area to grow and shrink */
 }
 
-
 #content h2 {
 	color: #009fe3;
   text-align: left;
@@ -101,7 +100,8 @@ main {
 
 
 #text {
-	margin: 15px auto 15px 5px;
+	margin: 0px auto 0px auto;
+
 	padding: 10px 15px 10px 15px;
   line-height: 1.5em;
 }
@@ -112,22 +112,52 @@ main {
 	grid-template-columns: 1fr 2fr 1fr;
 	column-gap: 10px;
 
-	margin: 0px auto 0px 0px;
+	margin: 0px auto 0px auto;
 
 	text-align: justify;
+	background-color: white;
+	color: black;
 }
 
+#row2, #row4 {
+	background-color: #009fe3;
+	color: white;
 
-#bottom-page {
 	display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 10px;
+}
 
-	margin: 0px auto 0px auto;
-	width: 90%;
+#row4 h2 {
+	color: white;
+}
 
-  line-height: 1.5em;
-  text-align: justify;
+#row2 {
+	grid-template-columns: 1fr;
+	height: 400px;
+}
+
+#row2 #text {
+	border-radius: 1.5rem;
+	background-color: white;
+	color: black;
+	width: 75%;
+	height: 75%;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+#row3 {
+	background-color: white;
+	color: black;
+
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	column-gap: 10px;
+}
+
+#row4 {
+	grid-template-columns: 1fr 1fr;
 }
 
 footer {
@@ -161,10 +191,8 @@ footer {
 	  grid-template-columns: 1fr;
   }
 
-  #bottom-page{
+  #row2, #row3, #row4{
     grid-template-columns: 1fr;
-		width: 90%;
-		margin: 15px 10px 10px 10px;
   }
 }
 
@@ -189,11 +217,10 @@ footer {
 	  grid-template-columns: 1fr 2fr;
 	}
 
-	#bottom-page{
+  #row2, #row3, #row4{
     grid-template-columns: 1fr;
-		width: 90%;
-		margin: 10px 10px 10px 10px;
-		}
+		margin: 5px auto 0px auto;
+  }
 }
 
 
@@ -217,10 +244,9 @@ footer {
 		grid-template-columns: 1fr;
   }
 
-	#bottom-page{
+  #row2, #row3, #row4{
+		margin: 5px auto 0px auto;
     grid-template-columns: 1fr;
-		width: 90%;
-		margin: 15px 10px 10px 10px;
-		}
+  }
 }
 
