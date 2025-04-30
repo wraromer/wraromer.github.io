@@ -7,10 +7,21 @@
   <link rel="icon" href="https://wolfgangs.support/favicon.ico" type="image/x-icon">
 
   <style>
+    :root {
+      --primary: #005385;
+      --secondary: #f5f5f5;
+      --text: #333;
+      --accent: #0096d6;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', sans-serif;
-      color: #333;
-      background-color: #fff;
+      color: var(--text);
+      background-color: white;
       line-height: 1.6;
 
       width: 90%;
@@ -18,9 +29,6 @@
       margin: 0 auto;
     }
     header {
-      background: linear-gradient(135deg, #85377E, #EA5A28);
-      color: white;
-
       padding: 2rem;
       display: flex;
       justify-content: space-between;
@@ -36,13 +44,19 @@
       margin-bottom: 0rem;
       padding: 0;
     }
+    header p {
+        font-size: 1.0rem;
+    }
+    h2, h3 {
+      margin: 1em 0;
+    }
     .logo {
       max-width: 64px;
       height: auto;
       border-radius: 8px;
     }
     main {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 3rem auto;
       padding: 0 1.5rem;
     }
@@ -56,6 +70,22 @@
       position: absolute;
       left: 0;
       right: 0;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: var(--accent);
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s ease, text-decoration 0.3s ease;
+    }
+    a.button:hover {
+      background: #007bb8;
+      text-decoration: underline;
+      cursor: pointer;
     }
     a {
       color: #005385;
@@ -72,6 +102,7 @@
     <div class="header-text">
       <h1>Impressum</h1>
     </div>
+    <a class="button" onclick="window.location.href='mailto:info@wolfgangs.support?subject=Anfrage%20%C3%BCber%20Homepage&body=Hallo%20Wolfgang%2C%0D%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihr%20Angebot.%20Bitte%20kontaktieren%20Sie%20mich.'">Kontakt aufnehmen</a>
   </header>
 
   <main>
@@ -89,6 +120,8 @@
     In meinem privaten Umfeld nehme ich seit vielen Jahren wahr, dass der eigene PC und das eigene Handy zwar in alltäglicher Benutzung sind, aber bereits einfache Sachverhalte nicht verstanden werden und dadurch Verunsicherung und Mistrauen in diese wichtigen Werkzeuge zunehmen. Dadurch entstand die wolfgangs.support Initiative, um mein Wissen und meine Erfahrung
     weiter zu geben und dadurch einen sicheren Umgang mit diesen modernen Tools zu vermitteln.
     </p>
+
+    <p></p>
 
     <h2>Angaben gemäß § 5 TMG</h2>
     <p>
