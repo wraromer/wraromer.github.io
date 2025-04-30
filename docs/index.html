@@ -34,17 +34,20 @@
         background: linear-gradient(135deg, #85377E, #EA5A28);
         color: white;
         padding: 2rem;
+
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
       }
       .header-text {
-        max-width: 70%;
+        max-width: 80%;
       }
       header h1 {
         font-size: 2.0rem;
-        margin-bottom: 0.5rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        padding: 0;
       }
       header p {
         font-size: 1.0rem;
@@ -137,11 +140,12 @@
 </head>
 <body>
   <header>
+    <img src="https://wolfgangs.support/favicon.ico" alt="Logo" class="logo">
     <div class="header-text">
       <h1>Wolfgangs Support</h1>
       <p>Ihr digitaler Fachmann und Trainer vor Ort</p>
     </div>
-    <img src="https://wolfgangs.support/favicon.ico" alt="Logo" class="logo">
+    <a class="button" onclick="window.location.href='mailto:info@wolfgangs.support?subject=Anfrage%20%C3%BCber%20Homepage&body=Hallo%20Wolfgang%2C%0D%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihr%20Angebot.%20Bitte%20kontaktieren%20Sie%20mich.'">Kontakt aufnehmen</a>
   </header>
 
 	<section class="intro">
