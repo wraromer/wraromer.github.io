@@ -3,162 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+
 	<meta name="description" content="Sie fühlen sich abgehängt bei digitalen Themen? Ich biete individuelle Schulungen für Ihre digitale Souveränität.">
 	<link rel="canonical" href="https://wolfgangs.support/">
   <link rel="icon" href="https://wolfgangs.support/favicon.ico" type="image/x-icon">
+
 	<title>Wolfgangs Support - Ihr digitaler Fachmann und Trainer vor Ort</title>
 
-  <style>
-      :root {
-        --primary: #005385;
-        --secondary: #f5f5f5;
-        --text: #333;
-        --accent: #0096d6;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      body {
-        font-family: 'Segoe UI', sans-serif;
-        color: var(--text);
-        background-color: white;
-        line-height: 1.6;
-
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-      }
-      header {
-        padding: 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-      .header-text {
-        max-width: 80%;
-      }
-      header h1 {
-        font-size: 2.0rem;
-        margin-top: 0rem;
-        margin-bottom: 0rem;
-        padding: 0;
-      }
-      header p {
-        font-size: 1.0rem;
-      }
-      .logo {
-        max-width: 64px;
-        height: auto;
-        border-radius: 8px;
-      }
-      .inline-block {
-        animation: cursor-fade 1.5s ease-in-out infinite;
-        display: inline-block;
-        vertical-align: middle;
-        width: 0.1em;
-        height: 1em;
-        background-color: rgba(0, 0, 0, 1);
-      }
-      @keyframes cursor-fade {
-        0%, 20%, 100% {
-          opacity:0;
-        }
-        30%, 80% {
-          opacity:1
-        }
-      }
-      .heading-gradient {
-        animation: gradient-flow 5s ease infinite;
-        background-image: linear-gradient(60deg,#8b5cf6,#f97316,#06b6d4);
-        background-clip: text;
-        color: transparent;
-        transition: background-position .8s ease;
-        background-size: 200% 200%;
-        background-position: 0% 50%;
-      }
-      .intro {
-        padding: 1rem 2rem 0 2rem;
-        max-width: 1000px;
-        margin: auto;
-      }
-      .section {
-        padding: 3rem 2rem;
-        max-width: 1000px;
-        margin: auto;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
-        margin-top: 2rem;
-      }
-      .card {
-        background: var(--secondary);
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      }
-      .testimonial {
-        font-style: italic;
-      }
-      footer {
-        background: linear-gradient(135deg, #85377E, #EA5A28);
-        color: white;
-        text-align: center;
-        padding: 1.5rem;
-        font-size: 0.9rem;
-
-        position: absolute;
-        left: 0;
-        right: 0;
-      }
-      a.button {
-        display: inline-block;
-        margin-top: 1rem;
-        padding: 0.75rem 1.5rem;
-        background: var(--accent);
-        color: white;
-        border-radius: 5px;
-        text-decoration: none;
-        cursor: pointer;
-        transition: background 0.3s ease, text-decoration 0.3s ease;
-      }
-      a.button:hover {
-        background: #007bb8;
-        text-decoration: underline;
-        cursor: pointer;
-      }
-
-      @media (max-width: 600px) {
-        header {
-          flex-direction: column;
-          align-items: flex-start;
-        }
-        .header-text {
-          max-width: 100%;
-          margin-bottom: 1rem;
-        }
-        header h1 {
-          font-size: 1.8rem;
-        }
-        header p {
-          font-size: 1rem;
-        }
-        .section {
-          padding: 2rem 1rem;
-        }
-        .card {
-          padding: 1rem;
-        }
-        a.button {
-          width: 100%;
-          text-align: center;
-        }
-      }
-  </style>
 </head>
 <body>
   <header>
@@ -199,28 +51,26 @@
     </div>
   </section>
 
-	<section id="testimonials" style="padding: 3rem 1rem; background-color: #f9f9f9;">
-		<h2 style="text-align: center; margin-bottom: 2rem;">Was meine Kunden möchten</h2>
-		<div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
-			
-			<div style="max-width: 250px; text-align: center;">
-				<img src="https://wolfgangs.support/images/wolfgangs.support-1.jpg" alt="Kundin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
-				<p style="font-style: italic;">„Welche Updates sollte ich immer schnell einspielen und wie mache ich das?“</p>
+	<section class="testimonials">
+		<h2>Was meine Kunden möchten</h2>
+		<div class="customers">
+			<div class="customer-card">
+				<img src="https://wolfgangs.support/images/wolfgangs.support-1.jpg" alt="Kundin">
+				<p>„Welche Updates sollte ich immer schnell einspielen und wie mache ich das?“</p>
 				<strong>– Notebook und Handy souverän bedienen</strong>
 			</div>
 	
-			<div style="max-width: 250px; text-align: center;">
-				<img src="https://wolfgangs.support/images/sir-1.jpg" alt="Kunde" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
-				<p style="font-style: italic;">„Ich möchte sicher sein, dass meine persönlichen Daten nicht in die falschen Hände gelangen.“</p>
+			<div class="customer-card">
+				<img src="https://wolfgangs.support/images/sir-1.jpg" alt="Kunde">
+        <p>„Ich möchte sicher sein, dass meine persönlichen Daten nicht in die falschen Hände gelangen.“</p>
 				<strong>– Souveräner Umgang mit den eigenen Daten</strong>
 			</div>
 	
-			<div style="max-width: 250px; text-align: center;">
-				<img src="https://wolfgangs.support/images/lady-6.jpg" alt="Kundin" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 1rem;">
-				<p style="font-style: italic;">„Ich möchte endlich Klarheit in meinen digitalen Alltag bringen.“</p>
+			<div class="customer-card">
+				<img src="https://wolfgangs.support/images/lady-6.jpg" alt="Kundin">
+				<p>„Ich möchte endlich Klarheit in meinen digitalen Alltag bringen.“</p>
 				<strong>– Kompetenz bei digitalen Themen</strong>
 			</div>
-	
 		</div>
 	</section>
 	
@@ -234,14 +84,14 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="outro">
     <h2>Jetzt starten</h2>
     <p>Erweitern Sie Ihre digitale Kompetenz mit maßgeschneiderten Schulungen und individueller Unterstützung.</p>
     <a class="button" onclick="window.location.href='mailto:info@wolfgangs.support?subject=Anfrage%20%C3%BCber%20Homepage&body=Hallo%20Wolfgang%2C%0D%0Aich%20interessiere%20mich%20f%C3%BCr%20Ihr%20Angebot.%20Bitte%20kontaktieren%20Sie%20mich.'">Kontakt aufnehmen</a>
   </section>
 
 	<footer>
-    <p>&copy; 2025 Wolfgangs Support - <a href="impressum.html" style="color: white; text-decoration: underline;">Impressum</a></p>
+    <p>&copy; 2025 Wolfgangs Support - <a href="impressum.html">Impressum</a></p>
 	</footer>
 </body>
 </html>
