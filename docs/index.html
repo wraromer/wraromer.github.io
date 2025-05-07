@@ -55,18 +55,18 @@
         border-radius: 8px;
       }
       .inline-block {
-        animation: cursor-fade 1.5s step-start infinite;
+        animation: cursor-fade 1.5s ease-in-out infinite;
         display: inline-block;
         vertical-align: middle;
-        width: 2px;
+        width: 0.1em;
         height: 1em;
         background-color: rgba(0, 0, 0, 1);
       }
       @keyframes cursor-fade {
-        0%, to {
+        0%, 20%, 100% {
           opacity:0;
         }
-        50% {
+        30%, 80% {
           opacity:1
         }
       }
