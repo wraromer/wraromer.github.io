@@ -36,6 +36,10 @@
       margin-top: 0rem;
       margin-bottom: 0rem;
       padding: 0;
+      text-align: center;
+    }
+    header h2 {
+      text-align: center;
     }
     header p {
       font-size: 1.0rem;
