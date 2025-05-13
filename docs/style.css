@@ -50,6 +50,14 @@ header p {
   border-radius: 8px;
   margin: 0px 0px 20px 0px;
 }
+.logo-card {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.logo-card-img {
+  max-width: 64px;
+}
 .inline-block {
   animation: cursor-fade 1.5s ease-in-out infinite;
   display: inline-block;
