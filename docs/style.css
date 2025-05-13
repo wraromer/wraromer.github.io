@@ -187,8 +187,14 @@ a.button:hover {
   header p {
     font-size: 1rem;
   }
+  .intro {
+    padding: 0rem 1rem;
+  }
   .section {
     padding: 2rem 1rem;
+  }
+  .outro {
+    padding: 0rem 1rem;
   }
   .card {
     padding: 1rem;
